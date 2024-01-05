@@ -1,0 +1,12 @@
+设置区
+1. 复制task.json中键label的值
+2. 打开launch.json, 在键值的最后添加键PreLaunchTask, 值为label的值   //启用断点
+
+3. 按F1打开命令面板，搜索"Terminal: Select Default Shell"并选择“Command Prompt"或"PowerShell".
+4. 打开launch.json, 将键externalConsole的值改为true.      //调试时打开外部命令行，解决内置终端无法输入的问题
+
+资源区
+新建文件时先导入整个文件夹（在资源管理器中显示整个文件夹）   //解决调试运行时因文件目录对不上导致报错
+
+调试
+语言选择C++（C++14），避免C11和C99中for函数内部不能定义变量等奇怪bug

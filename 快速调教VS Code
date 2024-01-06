@@ -5,6 +5,10 @@
 3. 按F1打开命令面板，搜索"Terminal: Select Default Shell"并选择“Command Prompt"或"PowerShell".
 4. 打开launch.json, 将键externalConsole的值改为true.      //调试时打开外部命令行，解决内置终端无法输入的问题
 
+5. Auto Save = onFocusChange  //自动保存
+6. Tab Completion = on  //启用tab补全
+7. 搜索Format，按需打开相关功能  //格式化代码
+
 资源区
 新建文件时先导入整个文件夹（在资源管理器中显示整个文件夹）   //解决调试运行时因文件目录对不上导致报错
 

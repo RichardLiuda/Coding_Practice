@@ -14,3 +14,7 @@
 
 调试
 语言选择C++（C++14），避免C11和C99中for函数内部不能定义变量等奇怪bug
+
+万能头
+打开c_cpp_properties.json, 在includepath中添加“C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include“
+或者下载stdc++.h文件放在include文件夹内，文件夹打开方式：1. 引用一个可引用的头文件. 2. 右键查看引用 3. 在资源管理器显示.

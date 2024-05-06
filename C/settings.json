@@ -1,0 +1,249 @@
+//C/C++部分
+
+{
+	//"files.autoSave": "afterDelay",
+	"files.autoGuessEncoding": true,
+	"workbench.list.smoothScrolling": true,
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.smoothScrolling": true,
+	"editor.cursorBlinking": "smooth",
+	//"editor.mouseWheelZoom": true,
+	//"editor.formatOnPaste": true,
+	//"editor.formatOnType": true,
+	//"editor.formatOnSave": true,
+	"editor.wordWrap": "on",
+	"editor.guides.bracketPairs": true,
+	//"editor.bracketPairColorization.enabled": true, (此设置vscode在较新版本已默认开启)
+	//"editor.suggest.snippetsPreventQuickSuggestions": false,
+	"editor.acceptSuggestionOnEnter": "smart",
+	"editor.suggestSelection": "first",
+	"window.dialogStyle": "custom",
+	"debug.showBreakpointsInOverviewRuler": true,
+
+	"javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+	// 鼠标滚轮缩放, ctrl+滚轮
+	"workbench.colorTheme": "One Dark Pro",
+	"files.autoSave": "onFocusChange",
+	"editor.fontSize": 16,
+	"editor.suggest.snippetsPreventQuickSuggestions": false,
+	"workbench.iconTheme": "vscode-icons",
+	"vsicons.dontShowNewVersionMessage": true,
+	"security.workspace.trust.untrustedFiles": "open",
+	"Codegeex.Privacy": true,
+	"code-runner.saveAllFilesBeforeRun": true,
+	"code-runner.saveFileBeforeRun": true,
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"code-runner.runInTerminal": true,
+	"terminal.integrated.enableMultiLinePasteWarning": "never",
+	"Codegeex.DisabledFor": {
+		"cpp": false,
+		"c": false
+	},
+	"C_Cpp.errorSquiggles": "enabled",
+	"Codegeex.Comment.LanguagePreference": "中文",
+	"github.copilot.enable": {
+		"*": false,
+		"plaintext": false,
+		"markdown": false,
+		"scminput": false
+	},
+	"editor.formatOnType": true,
+
+	//Latex部分
+
+	"latex-workshop.latex.outDir": "./Tmp",
+	"latex-workshop.latex.autoBuild.run": "onSave",
+	"latex-workshop.showContextMenu": true,
+	"latex-workshop.intellisense.package.enabled": true,
+	"latex-workshop.message.error.show": false,
+	"latex-workshop.message.warning.show": false,
+	"latex-workshop.latex.tools": [
+		{
+			"name": "xelatex",
+			"command": "xelatex -output-directory=Tmp",
+			"args": [
+				"-synctex=1",
+				"-interaction=nonstopmode",
+				"-file-line-error",
+				"%DOCFILE%",
+				"-outdir=%OUTDIR%"
+			]
+		},
+		{
+			"name": "pdflatex",
+			"command": "pdflatex",
+			"args": [
+				"-synctex=1",
+				"-interaction=nonstopmode",
+				"-file-line-error",
+				"%DOCFILE%"
+			]
+		},
+		{
+			"name": "latexmk",
+			"command": "latexmk",
+			"args": [
+				"-synctex=1",
+				"-interaction=nonstopmode",
+				"-file-line-error",
+				"-pdf",
+				"-outdir=%OUTDIR%",
+				"%DOCFILE%"
+			]
+		},
+		{
+			"name": "bibtex",
+			"command": "bibtex",
+			"args": ["Tmp/%DOCFILE%"]
+		}
+	],
+	"latex-workshop.latex.recipes": [
+		{
+			"name": "XeLaTeX",
+			"tools": ["xelatex"]
+		},
+		{
+			"name": "PDFLaTeX",
+			"tools": ["pdflatex"]
+		},
+		{
+			"name": "BibTeX",
+			"tools": ["bibtex"]
+		},
+		{
+			"name": "LaTeXmk",
+			"tools": ["latexmk"]
+		},
+		{
+			"name": "xelatex -> bibtex -> xelatex*2",
+			"tools": ["xelatex", "bibtex", "xelatex", "xelatex"]
+		},
+		{
+			"name": "pdflatex -> bibtex -> pdflatex*2",
+			"tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"]
+		}
+	],
+	"latex-workshop.latex.clean.fileTypes": [
+		"*.aux",
+		"*.bbl",
+		"*.blg",
+		"*.idx",
+		"*.ind",
+		"*.lof",
+		"*.lot",
+		"*.out",
+		"*.toc",
+		"*.acn",
+		"*.acr",
+		"*.alg",
+		"*.glg",
+		"*.glo",
+		"*.gls",
+		"*.ist",
+		"*.fls",
+		"*.log",
+		"*.fdb_latexmk"
+	],
+	"latex-workshop.latex.autoClean.run": "onFailed",
+	"latex-workshop.latex.recipe.default": "lastUsed",
+	"latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
+
+	"latex-workshop.view.pdf.viewer": "external",
+	"latex-workshop.view.pdf.ref.viewer": "auto",
+	"latex-workshop.view.pdf.external.viewer.command": "C:/Users/Richard Liu/AppData/Local/SumatraPDF/SumatraPDF.exe", // 注意修改路径
+	"latex-workshop.view.pdf.external.viewer.args": ["%PDF%"],
+	"latex-workshop.view.pdf.external.synctex.command": "C:/Users/Richard Liu/AppData/Local/SumatraPDF/SumatraPDF.exe", // 注意修改路径
+	"latex-workshop.view.pdf.external.synctex.args": [
+		"-forward-search",
+		"%TEX%",
+		"%LINE%",
+		"%PDF%"
+	],
+	//"editor.wordWrap": "on",
+	"[latex]": {
+		"editor.defaultFormatter": "James-Yu.latex-workshop"
+	},
+	"workbench.editor.splitInGroupLayout": "vertical",
+
+	// Python部分
+
+	//"[python]": {
+	// 控制字体大小(像素)
+	//"editor.fontSize": 16,
+	// 在 #editor.wordWrap# 为 wordWrapColumn 或 bounded 时，控制编辑器的折行列。100 列后换行
+	"editor.wordWrapColumn": 100,
+	// 控制tab键是空格还是制表符  true 空格  false制表符
+	"editor.detectIndentation": false,
+	// tab 对应空格大小
+	"editor.tabSize": 4,
+	// 在保存时格式化文件。
+	//"editor.formatOnSave": false,
+	// 开启 vscode 文件路径导航
+	"breadcrumbs.enabled": true,
+	// prettier 是否在每行末尾添加分号 ,C_cpp有用
+	"prettier.semi": false,
+	// prettier 设置强制单引号
+	"prettier.singleQuote": true,
+	// 尽可能控制尾随逗号的输出。 有效选项： 'none' - 无尾随逗号 ' es5' - 在ES5中有效的尾随逗号（对象，数组等） 'all' - 尾随逗号 尽可能（函数参数）
+	"prettier.trailingComma": "none",
+	// 定义函数参数括号前的空格处理方式。
+	"editor.mouseWheelZoom": true,
+	//"editor.defaultFormatter": "yapf",
+	"files.encoding": "utf8",
+
+	"python.analysis.completeFunctionParens": true,
+	"[python]": {
+		"editor.defaultFormatter": "eeyore.yapf",
+		"editor.formatOnSave": true,
+		"editor.formatOnType": true,
+		//"python.linting.flake8Enabled": true, //启用flake8，首先需要pip3 install falke8
+		//"python.formatting.provider": "yapf", ///启用yapf，首先需要pip3 install yapf
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"terminal.integrated.defaultProfile.windows": "Command Prompt",
+	"security.workspace.trust.enabled": false,
+	"vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
+	"python.condaPath": "D:\\Coding\\Anaconda",
+	"python.languageServer": "Pylance",
+	"prettier.useTabs": true,
+	"prettier.tabWidth": 4,
+	"masmtasm.ASM.emulator": "dosbox",
+	"masmtasm.ASM.assembler": "MASM",
+
+	// "[python]": {
+	//   "editor.defaultFormatter": "KevinRose.vsc-python-indent",
+	//   "git.ignoreLegacyWarning": true,
+	//   //"workbench.iconTheme": "vscode-icons", //启用vscode图标
+	//   "python.*pythonPath*": "C:\\Python312", //
+	//   "editor.lineHeight": 26, // 编辑器中的行高
+	//   //"editor.fontSize": 16, // 编辑器中的字体
+	//   "editor.wordWrap": "on",
+	//   //"editor.formatOnSave": true, //编辑器自动保存
+	//   "python.linting.flake8Enabled": true, //启用flake8，首先需要pip3 install falke8
+	//   "python.formatting.provider": "yapf", ///启用yapf，首先需要pip3 install yapf
+	//   "editor.renderIndentGuides": false,
+	//   "path-intellisense.autoSlashAfterDirectory": true,
+	//   "path-intellisense.extensionOnImport": true,
+	//   //"workbench.colorTheme": "Monokai", // 配色方案
+	// "window.zoomLevel": 1,
+	// "livecode.inlineResults": true,
+	// "livecode.keepPreviousVars": true,
+	// "livecode.defaultImports": [""],
+	// "livecode.shell_plus": true,
+	// "settingsSync.ignoredExtensions": ["hiiamlala.daily-waifu"],
+	// "[jsonc]": {
+	//   "editor.defaultFormatter": "esbenp.prettier-vscode"
+	// },
+	// "workbench.editor.splitInGroupLayout": "vertical",
+	// "AREPL.pythonPath": "C:\\Python312\\python.exe",
+	// "security.workspace.trust.enabled": false,
+	"masmtasm.dosbox.run": "exit",
+	"masmtasm.ASM.MASMorTASM": "MASM",
+	"tabnine.experimentalAutoImports": true,
+	"hediet.vscode-drawio.resizeImages": null
+}

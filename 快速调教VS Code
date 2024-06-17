@@ -8,7 +8,8 @@
 5. Auto Save = onFocusChange  //自动保存
 6. Tab Completion = on  //启用tab补全
 7. 搜索Format，按需打开相关功能  //格式化代码
-	{	"files.autoGuessEncoding": true,
+	{	
+	"files.autoGuessEncoding": true,
 	"workbench.list.smoothScrolling": true,
 	"editor.cursorSmoothCaretAnimation": "on",
 	"editor.smoothScrolling": true,
@@ -18,7 +19,8 @@
 	"editor.formatOnType": true,
 	"editor.formatOnSave": true,
 	"editor.wordWrap": "on",
-	"editor.guides.bracketPairs": true,}
+	"editor.guides.bracketPairs": true,
+}
 
 资源区
 新建文件时先导入整个文件夹（在资源管理器中显示整个文件夹）   //解决调试运行时因文件目录对不上导致报错

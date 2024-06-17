@@ -8,12 +8,24 @@
 5. Auto Save = onFocusChange  //自动保存
 6. Tab Completion = on  //启用tab补全
 7. 搜索Format，按需打开相关功能  //格式化代码
+	{	"files.autoGuessEncoding": true,
+	"workbench.list.smoothScrolling": true,
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.smoothScrolling": true,
+	"editor.cursorBlinking": "phase",
+	"editor.mouseWheelZoom": true,
+	"editor.formatOnPaste": true,
+	"editor.formatOnType": true,
+	"editor.formatOnSave": true,
+	"editor.wordWrap": "on",
+	"editor.guides.bracketPairs": true,}
 
 资源区
 新建文件时先导入整个文件夹（在资源管理器中显示整个文件夹）   //解决调试运行时因文件目录对不上导致报错
 
 调试
 语言选择C++（C++14），避免C11和C99中for函数内部不能定义变量等奇怪bug
+**设置搜索cppStandard选择c++版本**
 
 万能头
 打开c_cpp_properties.json, 在includepath中添加“C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include“
